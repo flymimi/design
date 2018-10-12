@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/PlantAdnZ0mbieDemo" />
+            <option value="$PROJECT_DIR$/animation" />
+            <option value="$PROJECT_DIR$/design" />
+            <option value="$PROJECT_DIR$/fragment" />
+            <option value="$PROJECT_DIR$/gfbosurfaceview" />
+            <option value="$PROJECT_DIR$/listview" />
+            <option value="$PROJECT_DIR$/materialdesign" />
+            <option value="$PROJECT_DIR$/musicplay" />
+            <option value="$PROJECT_DIR$/myapplication" />
+            <option value="$PROJECT_DIR$/path" />
+            <option value="$PROJECT_DIR$/recylerview" />
+            <option value="$PROJECT_DIR$/webviewtest" />
+          </set>
+        </option>
+        <option name="resolveModulePerSourceSet" value="false" />
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>

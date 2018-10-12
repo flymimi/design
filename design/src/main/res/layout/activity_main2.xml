@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@android:id/tabhost"
+
+    android:layout_weight="1">
+<android.support.v4.widget.DrawerLayout
+    android:layout_width="match_parent"
+    android:id="@+id/drawlayout"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TabWidget
+            android:id="@android:id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </TabWidget>
+
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@android:id/tabs">
+             <!-- 第一个tab的布局 -->           
+             <LinearLayout
+                android:id="@+id/tab1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/te4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                     />
+            </LinearLayout>
+                         
+            <!-- 第二个tab的布局 -->
+            <LinearLayout
+                android:id="@+id/tab2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/te5"
+           />
+            </LinearLayout>
+             </FrameLayout>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        //首页内容
+
+        <ImageButton
+
+            android:id="@+id/first"
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="520dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/first" />
+        //发布内容
+
+        <ImageButton
+            android:id="@+id/second"
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:layout_alignTop="@+id/first"
+            android:layout_marginTop="520dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/second" />
+        //消息内容
+
+        <ImageButton
+            android:id="@+id/third"
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:layout_alignTop="@+id/first"
+            android:layout_marginTop="520dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/third" />
+        //我的内容
+
+        <ImageButton
+            android:id="@+id/fouth"
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:layout_alignTop="@+id/first"
+            android:layout_marginTop="520dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/fourth" />
+
+    </LinearLayout>
+    //Drawlayout内容
+    <android.support.design.widget.NavigationView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/nav1"
+        android:layout_gravity="start"
+        app:menu="@menu/nav1"
+        app:headerLayout="@layout/head1">
+    </android.support.design.widget.NavigationView>
+</android.support.v4.widget.DrawerLayout>
+</TabHost>
